@@ -1,0 +1,11 @@
+{
+	"name": "demo-stone-deeplink",
+	"description": "Demo Stone Deeplink integration for Delphi (Firemonkey)",
+	"version": "1.0.0",
+	"homepage": "https://github.com/CarlosHe/demo-stone-deeplink",
+	"mainsrc": "./src",
+	"projects": [],
+	"dependencies": {
+		"github.com/carloshe/stone-deeplink": "^1.0.0"
+	}
+}

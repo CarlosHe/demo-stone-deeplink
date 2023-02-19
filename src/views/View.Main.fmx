@@ -1,0 +1,285 @@
+object MainView: TMainView
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 608
+  ClientWidth = 393
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object MemoOutput: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    StyledSettings = [FontColor]
+    TextSettings.Font.Family = 'monospace'
+    TextSettings.Font.Size = 9.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Align = Client
+    Size.Width = 393.000000000000000000
+    Size.Height = 207.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 385.000000000000000000
+    Viewport.Height = 199.000000000000000000
+  end
+  object LayoutPayment: TLayout
+    Align = Top
+    Padding.Left = 10.000000000000000000
+    Padding.Top = 10.000000000000000000
+    Padding.Right = 10.000000000000000000
+    Padding.Bottom = 10.000000000000000000
+    Size.Width = 393.000000000000000000
+    Size.Height = 259.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object ButtonPayment: TButton
+      Align = Client
+      Margins.Top = 5.000000000000000000
+      Size.Width = 373.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Payment'
+      TintColor = claTeal
+      OnClick = ButtonPaymentClick
+    end
+    object LayoutPaymentAmount: TLayout
+      Align = Top
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 373.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      object TextAmount: TText
+        Align = Left
+        Size.Width = 153.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Amount:'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+      end
+      object EditPaymentAmount: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        OnTap = EditAmountTap
+        Align = Client
+        TabOrder = 1
+        KeyboardType = DecimalNumberPad
+        FilterChar = '0123456789.,'
+        TextSettings.Font.Size = 16.000000000000000000
+        Size.Width = 220.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        OnTyping = EditAmountTyping
+        OnClick = EditAmountClick
+      end
+    end
+    object LayoutPaymentTransactionType: TLayout
+      Align = Top
+      Position.X = 10.000000000000000000
+      Position.Y = 49.000000000000000000
+      Size.Width = 373.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      object TextPaymentTransactionType: TText
+        Align = Left
+        Size.Width = 153.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Transaction type:'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+      end
+      object ComboBoxPaymentTransactionType: TComboBox
+        Align = Client
+        Size.Width = 220.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+      end
+    end
+    object LayoutPaymentInstallmentType: TLayout
+      Align = Top
+      Position.X = 10.000000000000000000
+      Position.Y = 88.000000000000000000
+      Size.Width = 373.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object TextPaymentInstallmentType: TText
+        Align = Left
+        Size.Width = 153.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Installment type:'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+      end
+      object ComboBoxPaymentInstallmentType: TComboBox
+        Align = Client
+        Size.Width = 220.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+      end
+    end
+    object LayoutPaymentInstallmentCount: TLayout
+      Align = Top
+      Position.X = 10.000000000000000000
+      Position.Y = 127.000000000000000000
+      Size.Width = 373.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object TextPaymentInstallmentCount: TText
+        Align = Left
+        Size.Width = 153.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Installment count:'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+      end
+      object ComboBoxPaymentInstallmentCount: TComboBox
+        Align = Client
+        Size.Width = 220.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+      end
+    end
+    object LayoutPaymentEditableAmount: TLayout
+      Align = Top
+      Position.X = 10.000000000000000000
+      Position.Y = 166.000000000000000000
+      Size.Width = 373.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object TextPaymentEditableAmount: TText
+        Align = Left
+        Size.Width = 153.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Editable amount:'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+      end
+      object SwitchPaymentEditableAmount: TSwitch
+        Align = Client
+        IsChecked = False
+        TabOrder = 1
+      end
+    end
+  end
+  object LayoutCancelation: TLayout
+    Align = Top
+    Padding.Left = 10.000000000000000000
+    Padding.Top = 10.000000000000000000
+    Padding.Right = 10.000000000000000000
+    Padding.Bottom = 10.000000000000000000
+    Position.Y = 259.000000000000000000
+    Size.Width = 393.000000000000000000
+    Size.Height = 142.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object ButtonCancelation: TButton
+      Align = Client
+      Enabled = False
+      Margins.Top = 5.000000000000000000
+      Size.Width = 373.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Cancelation'
+      TintColor = claTomato
+      OnClick = ButtonCancelationClick
+    end
+    object LayoutCancelationATK: TLayout
+      Align = Top
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 373.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object TextCancelationATK: TText
+        Align = Left
+        Size.Width = 153.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'ATK:'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+      end
+      object EditCancelationATK: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 1
+        KeyboardType = DecimalNumberPad
+        FilterChar = '0123456789'
+        TextSettings.Font.Size = 16.000000000000000000
+        Size.Width = 220.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        OnChange = EditCancelationATKChange
+        OnTyping = EditCancelationATKTyping
+      end
+    end
+    object LayoutCancelationAmount: TLayout
+      Align = Top
+      Position.X = 10.000000000000000000
+      Position.Y = 49.000000000000000000
+      Size.Width = 373.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object TextCancelationAmount: TText
+        Align = Left
+        Size.Width = 153.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Amount:'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+      end
+      object EditCancelationAmount: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        OnTap = EditAmountTap
+        Align = Client
+        TabOrder = 1
+        KeyboardType = DecimalNumberPad
+        FilterChar = '0123456789.,'
+        TextSettings.Font.Size = 16.000000000000000000
+        Size.Width = 220.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        OnTyping = EditAmountTyping
+        OnClick = EditAmountClick
+      end
+    end
+  end
+  object StoneDeeplink: TStoneDeeplink
+    OnPaymentSuccess = StoneDeeplinkPaymentSuccess
+    OnPaymentError = StoneDeeplinkPaymentError
+    OnCancelationSuccess = StoneDeeplinkCancelationSuccess
+    OnCancelationError = StoneDeeplinkCancelationError
+    Scheme = 'demo_stone_deeplink'
+    Left = 32
+    Top = 304
+  end
+end

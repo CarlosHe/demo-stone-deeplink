@@ -1,0 +1,76 @@
+{
+	"hash": "d41d8cd98f00b204e9800998ecf8427e",
+	"updated": "2023-02-09T19:38:03.5779106-03:00",
+	"installedModules": {
+		"github.com/carloshe/stone-deeplink": {
+			"name": "stone-deeplink",
+			"version": "1.0.7",
+			"hash": "af9f21f33c241a3d85da4bf580a13e80",
+			"artifacts": {
+				"dcp": [
+					"stone_deeplink.bpi",
+					"stone_deeplink.dcp",
+					"stone_deeplink.lib"
+				],
+				"dcu": [
+					"Stone.Deeplink.Adapter.Android.Cancelation.dcu",
+					"Stone.Deeplink.Adapter.Android.CancelationReturn.dcu",
+					"Stone.Deeplink.Adapter.Android.Payment.dcu",
+					"Stone.Deeplink.Adapter.Android.PaymentReturn.dcu",
+					"Stone.Deeplink.Adapters.dcu",
+					"Stone.Deeplink.Android.Application.dcu",
+					"Stone.Deeplink.Applications.dcu",
+					"Stone.Deeplink.Builder.Entity.Cancelation.dcu",
+					"Stone.Deeplink.Builder.Entity.CancelationReturn.dcu",
+					"Stone.Deeplink.Builder.Entity.Payment.dcu",
+					"Stone.Deeplink.Builder.Entity.PaymentReturn.dcu",
+					"Stone.Deeplink.Builders.dcu",
+					"Stone.Deeplink.Callbacks.dcu",
+					"Stone.Deeplink.Component.Application.dcu",
+					"Stone.Deeplink.Components.dcu",
+					"Stone.Deeplink.Contract.Adapter.Cancelation.dcu",
+					"Stone.Deeplink.Contract.Adapter.CancelationReturn.dcu",
+					"Stone.Deeplink.Contract.Adapter.Payment.dcu",
+					"Stone.Deeplink.Contract.Adapter.PaymentReturn.dcu",
+					"Stone.Deeplink.Contract.Application.dcu",
+					"Stone.Deeplink.Contract.Builder.Entity.Cancelation.dcu",
+					"Stone.Deeplink.Contract.Builder.Entity.CancelationReturn.dcu",
+					"Stone.Deeplink.Contract.Builder.Entity.Payment.dcu",
+					"Stone.Deeplink.Contract.Builder.Entity.PaymentReturn.dcu",
+					"Stone.Deeplink.Contract.Entity.Cancelation.dcu",
+					"Stone.Deeplink.Contract.Entity.CancelationReturn.dcu",
+					"Stone.Deeplink.Contract.Entity.Payment.dcu",
+					"Stone.Deeplink.Contract.Entity.PaymentReturn.dcu",
+					"Stone.Deeplink.Contract.Proxy.Cancelation.dcu",
+					"Stone.Deeplink.Contract.Proxy.Payment.dcu",
+					"Stone.Deeplink.Contract.Proxy.Printer.dcu",
+					"Stone.Deeplink.Contracts.dcu",
+					"Stone.Deeplink.Entities.dcu",
+					"Stone.Deeplink.Entity.Cancelation.dcu",
+					"Stone.Deeplink.Entity.CancelationReturn.dcu",
+					"Stone.Deeplink.Entity.Payment.dcu",
+					"Stone.Deeplink.Entity.PaymentReturn.dcu",
+					"Stone.Deeplink.Enum.EditableAmountType.dcu",
+					"Stone.Deeplink.Enum.InstallmentType.dcu",
+					"Stone.Deeplink.Enum.TransactionType.dcu",
+					"Stone.Deeplink.Enums.dcu",
+					"Stone.Deeplink.Helper.AmountType.dcu",
+					"Stone.Deeplink.Helper.Enum.InstallmentType.dcu",
+					"Stone.Deeplink.Helper.Enum.TransactionType.dcu",
+					"Stone.Deeplink.Proxies.dcu",
+					"Stone.Deeplink.Proxy.Android.Cancelation.dcu",
+					"Stone.Deeplink.Proxy.Android.Payment.dcu",
+					"Stone.Deeplink.Proxy.Android.Printer.dcu",
+					"Stone.Deeplink.Register.dcu",
+					"Stone.Deeplink.Types.dcu",
+					"Stone.Deeplink.dcu"
+				],
+				"bpl": [
+					"stone_deeplink.bpl"
+				]
+			},
+			"failed": false,
+			"changed": false
+		}
+	}
+}
